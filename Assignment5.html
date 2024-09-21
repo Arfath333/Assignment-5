@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-5</title>
+  </head>
+  <body>
+    <!-- # Assignment 5 - Product catalogue
+
+*Problem statement*
+
+Develop a multi-page product catalogue for a fictional store. -----(Done)
+Create a home page with categories, and individual pages for each (category) and (product). ----(Done)
+Use tables for product specifications, ordered and unordered lists for features, and implement proper semantic structure throughout. 
+Include a search form and a contact form with various input types and form validation attributes -->
+
+    <div class="header">
+      <h1>5. Product Catalog</h1>
+      <div class="search-bar">
+        <input type="text" placeholder="Search.." name="search" >
+        <button type="submit">Search</button>
+      </div>
+    </div>
+    <hr />
+    <div class="nav">
+      <h2>Home Page</h2>
+      <a href="#home"><h4>Home</h4> </a>
+      <a href="./Product_catalog/grocery.html" target="_blank"><h4>Grocery</h4></a>
+      <a href="./Product_catalog/clothes.html" target="_blank"><h4>Clothes</h4></a>
+      <a href="./Product_catalog/mobiles.html" target="_blank"><h4>Mobiles</h4></a>
+      <a href="./Product_catalog/home-appliance.html" target="_blank"> <h4>Home Applience</h4></a>
+      <a href="./Product_catalog/Automobiles.html" target="_blank"><h4>Automobiles</h4></a>
+    </div>
+
+    <hr />
+
+    <div class="main">
+      <div class="tbl" id="tbl">
+        <table border="1px solid">
+          <p><h2>Product specifications Table</h2></p>
+          <tr>
+          <thead>
+            <th>Special Offers</th>
+            <th>Home</th>
+            <th>Grocery</th>
+            <th>Clothes</th>
+            <th>Mobiles</th>
+            <th>Home Appliance</th>
+            <th>Automobile</th>
+            <th></th>
+          </thead>
+          <tbody>
+            // sample text
+            <td>
+              <ol>
+              <li><a href="30%-off"><h4>Flat 30% Off</h4></a>  
+              </li>
+              <li><a href="50%-off"><h4>Flat upto 50% Off</h4></a></li>
+              <li><a href="80%-off"><h4>Flat 80% Off</h4></a></li>
+            </ol>
+            </td>
+            <td>
+              <ol>
+              <li><a href="#home">HOME</a></li>
+              <li><a href="./Product_catalog/grocery.html">Grocery</a></li>
+              <li><a href="./Product_catalog/clothes.html">Clothes</a></li>
+              <li><a href="./Product_catalog/mobiles.html">Mobiles</a></li>
+              <li><a href="./Product_catalog/home-appliance.html">Home Appliance</a> </li>
+              <li><a href="./Product_catalog/Automobiles.html">Automobiles</a></li>
+            </ol>
+          </td>
+            <td>
+              <ol>
+                <li><a href="#"><b>Dairy</b><br>(milk, cheese, yogurt)</a></li>
+                <li><a href="#"><b>Protein</b><br>(chicken, beef, tofu)</a></li>
+                <li><a href="#"><b>Legumes</b><br>(beans, lentils, peanuts)</a></li>
+                <li><a href="#"><b>Raw vegetables</b><br>(salad, baby carrots, avocado)</a></li>
+                <li><a href="#"><b>Pantry staples</b><br>(spices, pasta, sauces)</a></li>
+                <li><a href="#"><b>Cooking vegetables</b><br>(cauliflower, broccoli, brussels sprouts)</a></li>
+                <li><a href="#"><b>Fruits</b><br>(apples, oranges, berries)</a></li>
+              </ol>
+            </td>
+            <td>
+              <ol>
+                <li><a href="#men-clothes">Men's Wear</a></li>
+                <li><a href="#Women-clothes">Women's Wear</a></li>
+                <li><a href="#kid"> Kid's Wear</a></li>
+                <li><a href="#Pets">Pet's Costumes</a></li>
+              </ol>
+            </td>
+            <td>
+              <ol>
+                <li><a href="#tch-mob">Touch Screen</a></li>
+                <li><a href="#tel">Telephones</a></li>
+                <li><a href="#kpd-mob">Key Pads</a></li>
+              </ol>
+            </td>
+            <td>
+              <ol>
+                <li><a href="#">Kitchen equipment;   </a></li>
+                <li><a href="#">Cleaning equipment;</a></li>
+                <li><a href="#">Laundry equipment;</a></li>
+                <li><a href="#">Entertainment-center equipment;</a></li>
+              </ol>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <hr>
+    <div class="footer">
+      <form action="contact">
+        <div class="cnt">
+          <h2>Contact Us</h2>
+          <label for="first-name"><b>Your Name :</b></label>
+          <input type="text" placeholder="First Name ">
+          <br>
+          <label for="Second-Name"><b>Second Name :</b></label>
+          <input type="text" placeholder="Second Name">
+          <br><br>
+          <label for="E-mail"><b>E-mail :</b></label>
+          <input type="email" placeholder="e-mail" required>
+          <br><br>
+          <label for="Contact"><b>Contact Number :</b></label>
+          <input type="number" placeholder="Number">
+          <br><br>
+          <label for="reason"><b>Reason :</b></label>
+          <select name="reason" id="reason" name="reason">
+            <option value="" disabled selected><b>Select Your Reason</b></option>
+            <option value="Complain">Sales</option>
+            <option value="maintenence">Maintenence</option>
+            <option value="other">other</option>
+          </select>
+          <br><br>
+          <label for="message"><b>Your Message</b></label>
+          <input type="text" placeholder="Type Your Message Here"><br>
+          <input type="submit" >
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
